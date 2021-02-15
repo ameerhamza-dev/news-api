@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: lightgray
+}
+
+.item {
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-size: 17px;
+  height: 27px;
+  justify-content: center;
+  width: 35px;
+}
+
+.disabled-page {
+  color: #586067;
+}
+
+.active {
+  border: solid 2px #60686f;
+  border-radius: 20px;
+  color: #60686f;
+}
+
+.pagination {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+}
+
+.pagination-page {
+  font-weight: 700;
+}
